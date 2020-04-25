@@ -8,10 +8,20 @@ html {
     padding: 0;
 }
 
-@media screen and (max-width: 480px) and (orientation: portrait) {
+@media screen and (max-width:479px) {
     body,
     html {
         width: 100%;
+        float: left;
+        overflow-x: hidden;
+    }
+}
+
+@media screen and (min-width: 480px) and (orientation: landscape) {
+    body,
+    html {
+        width: 100%;
+        float: left;
         overflow-x: hidden;
     }
 }
@@ -708,6 +718,12 @@ footer a,
         margin-top: 20px;
     }
     .row-div {
+        margin: 20px auto;
+    }
+    .service-div {
+        margin: 0 auto;
+    }
+    .service-row-div .col-md-4 {
         margin: 20px auto;
     }
 }
